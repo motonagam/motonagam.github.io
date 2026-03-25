@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>映像・プレイ動画</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Noto Serif JP", serif;
+  background: #0a1224;
+  color: #f0f4ff;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 動画カード */
+.video {
+  margin-bottom: 40px;
+}
+
+.video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.video-title {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.video-desc {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+/* 戻るボタン */
+.back-btn {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #d8e4ff;
+  text-decoration: none;
+  backdrop-filter: blur(4px);
+  transition: all 0.2s;
+}
+
+.back-btn:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateX(-3px);
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="back-btn">← 戻る</a>
+
+<div class="container">
+  <h1>楽曲・プレイ動画</h1>
+
+  <!-- 動画① -->
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/7HIUE_OPJiM" allowfullscreen></iframe>
+    <div class="video-title">Into The Sky</div>
+    <div class="video-desc">
+      制作期間：1週間 / 使用：BandLab<br>
+    </div>
+  </div>
+
+
+</div>
+
+</body>
+</html>
